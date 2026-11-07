@@ -98,6 +98,12 @@ The local Windows build is **`Builds/Windows/RIMBARA.exe`**. Keep the whole
 Windows folder together when copying the game. Builds, caches, credentials,
 logs, and raw diagnostics are intentionally not committed.
 
+The completed local delivery also includes **`Builds/RIMBARA-Windows-x64.zip`**
+with the full Windows folder, launch instructions, and licence notices. Extract
+the entire `RIMBARA-Windows` folder and run `RIMBARA.exe`. This local archive is
+not part of the source repository; rebuilding the player does not refresh an
+already-created ZIP.
+
 For a fresh-clone check, clone the committed repository to a different folder,
 run `git lfs pull` and `git lfs fsck`, then run the batch project verification
 and EditMode tests using that clone's project path. This catches missing

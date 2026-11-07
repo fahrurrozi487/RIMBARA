@@ -23,6 +23,9 @@ This is the separate **solo RIMBARA project**. It does not modify the earlier
    git lfs pull
    ```
 
+   Use Git and Git LFS rather than **Download ZIP**: source archives can contain
+   LFS pointer files instead of the required character meshes, audio and textures.
+
 3. Add the `RIMBARA` folder to Unity Hub. It contains `Assets`, `Packages`, and
    `ProjectSettings`; do not select the sibling Forest Reborn folder.
 4. Open **`Assets/Scenes/Main.unity`** and press **Play**.
@@ -109,6 +112,8 @@ are preserved under `Docs/Evidence` and `Docs/Captures`.
 Verified on the latest Windows build: **56 scene/model checks**, **36 EditMode
 tests**, **79 full-MVP runtime checks**, and **69 Week 1 runtime checks**, all
 passed. Both profiles reach return-to-post victory and replay cleanly.
+An independent HTTPS/Git LFS clone also passed first-import scene verification
+and all 36 unit tests, without regenerating Main or reusing its Library cache.
 
 ## Scope and licensing
 

@@ -17,6 +17,9 @@ the UI pointer tests, corrected volume slider, and tree-avoiding Week 1 route.
 | Unity asset metadata | **353 assets / 442 metadata files**; no missing metadata, invalid GUIDs, or duplicate GUIDs | [Asset audit](Evidence/asset-audit.json) |
 | Official controller provenance | Both runtime scripts **byte-for-byte identical** to the official 2.0.2 package | [SHA-256 record](Evidence/official-controller-provenance.json) |
 | Windows distribution support and licences | Executable, data, UnityPlayer, and all three licence notices present | [Distribution audit](Evidence/distribution-audit.json) |
+| Local Git LFS integrity | **126 tracked files / 125 unique objects**; all checked out, zero SHA-256 mismatches, `git lfs fsck` passed | [LFS audit](Evidence/lfs-audit.json) |
+| Local Windows ZIP | **176 files**, 41,488,713 bytes; archive CRC/integrity check passed | [Archive audit](Evidence/distribution-archive.json) |
+| Independent HTTPS/Git LFS clone | **Passed**: fresh import, 56 scene/model checks, 36 unit tests, all LFS/vendor hashes intact | [Clone audit](Evidence/fresh-clone.json) |
 
 The test environment used **Unity 6000.3.6f1**, Windows x64, an **AMD Radeon
 RX 6600**, and **Direct3D 11** at **1600 × 900**, windowed. Recorded UTC times:
@@ -87,9 +90,42 @@ the repository is private and has no invited Persons B/C.
 
 Use the [build/test commands](Build.md) to reproduce the checks. Normal clones
 already include Main, prefabs, fonts, textures, audio and profiles; **do not
-regenerate Main merely to import or play the project**. A clean-clone check
-must download LFS objects and import without borrowing the existing Library
-cache. Its executed result is recorded separately after source publication.
+regenerate Main merely to import or play the project**.
+
+## Executed fresh-clone verification
+
+The published source commit
+**`12ac408289d92fdc6e177f7de17aae2721b3cc9b`** was cloned over HTTPS to a new
+temporary directory, initially skipping smudge so that `git lfs pull` could
+explicitly download the binary assets from GitHub. No Git object alternates,
+shared LFS storage, or pre-existing Unity Library were used. Unity's normal
+machine-level package cache is allowed; the project's imported Library was
+created from scratch.
+
+- **126 LFS files / 125 unique objects** downloaded and checked out;
+  `git lfs fsck` and all checkout SHA-256 comparisons passed.
+- **353 assets / 442 metadata files** were present. The two official controller
+  hashes, Main's hash, manifest, and resolved package lock matched the verified
+  source. Main was **not regenerated**.
+- First-import verification passed **56/56** checks at
+  `2026-11-07T17:20:04Z` ([scene report](Evidence/fresh-clone-project-verification.json)).
+- EditMode passed **36/36**, with zero failures/skipped cases, at
+  `2026-11-07T17:20:42Z` ([unit XML](Evidence/fresh-clone-editmode-tests.xml)).
+- No tracked content changes remained after import/tests; the clone's Git
+  working tree was clean. Final follow-up changes only add documentation and
+  evidence, not gameplay code, scenes, packages, or project settings.
+
+The [combined clone audit](Evidence/fresh-clone.json) records the actual checks.
+To repeat them in an independent folder:
+
+```powershell
+git clone https://github.com/fahrurrozi487/RIMBARA.git RIMBARA-verify
+cd RIMBARA-verify
+git lfs pull
+git lfs fsck
+.\Tools\Invoke-UnityCommand.ps1 -Command verify
+.\Tools\Test-EditMode.ps1
+```
 
 ## Known design limitations
 
