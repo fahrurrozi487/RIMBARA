@@ -1,0 +1,8 @@
+{
+  "name": "Rimbara.Tests",
+  "rootNamespace": "Rimbara.Tests",
+  "references": ["Rimbara", "Unity.Cinemachine", "Unity.InputSystem", "Unity.TextMeshPro"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "autoReferenced": false
+}

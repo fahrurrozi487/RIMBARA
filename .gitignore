@@ -1,0 +1,38 @@
+# Unity-generated folders (never commit the imported cache).
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Aa]rtifacts/
+/[Rr]ecordings/
+/.vs/
+/.idea/
+/.vscode/
+
+# Generated IDE/build files.
+*.csproj
+*.sln
+*.slnx
+*.user
+*.pidb
+*.pdb
+*.mdb
+*.booproj
+*.unityproj
+*.tmp
+*.log
+sysinfo.txt
+crashlytics-build.properties
+
+# Local credentials and machine-specific environment.
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Keep Unity asset metadata: it preserves scene/prefab references.
+!/[Aa]ssets/**/*.meta

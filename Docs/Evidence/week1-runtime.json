@@ -1,0 +1,369 @@
+{
+    "Passed": true,
+    "Unity": "6000.3.6f1",
+    "Profile": "Arunika / Week 1",
+    "Utc": "2026-11-07T17:10:38.5737170Z",
+    "GraphicsDevice": "AMD Radeon RX 6600 / Direct3D11",
+    "Width": 1600,
+    "Height": 900,
+    "MeanFrameMilliseconds": 10.061285972595215,
+    "P95FrameMilliseconds": 10.009998321533204,
+    "Checks": [
+        {
+            "Name": "Menu starts with gameplay disabled",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Profile selects the authored object supply",
+            "Passed": true,
+            "Detail": "1/1/1"
+        },
+        {
+            "Name": "Mouse click opens the controls screen",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Mouse click returns from controls to menu",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Volume slider is wired",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Mouse click opens profile-specific briefing",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Briefing ignores movement input",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Begin enables the official motor",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Vendor input map stays deactivated",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Mixamo avatar animates with valid bones",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Character mesh has human-scale bounds",
+            "Passed": true,
+            "Detail": "Height 1.653 m"
+        },
+        {
+            "Name": "Idle, walk and run clips are present",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "W moves forward through the official motor",
+            "Passed": true,
+            "Detail": "1.881 m in 0.8 s"
+        },
+        {
+            "Name": "Walking drives the locomotion blend",
+            "Passed": true,
+            "Detail": "2.599"
+        },
+        {
+            "Name": "Shift running is faster than walking",
+            "Passed": true,
+            "Detail": "Walk 1.881 / run 3.825 m"
+        },
+        {
+            "Name": "Running drives the run animation",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Diagonal input is normalized",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "S moves backward relative to the camera",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "A moves left relative to the camera",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "D moves right relative to the camera",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Mouse delta orbits the third-person camera",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Camera pitch clamps at the official limit",
+            "Passed": true,
+            "Detail": "72.0 degrees"
+        },
+        {
+            "Name": "Seedlings are gated by First Steps",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Water cannot skip mission order",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Escape pauses and freezes time",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Pause blocks motion, interactions and water",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Mouse pointer changes the pause volume slider",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Escape resumes the session",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Out-of-bounds recovery preserves progress",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Physical inspection trigger starts Seeds of Hope",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Empty inventory cannot plant",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Distant seedlings cannot be selected or collected",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Nearby detector selects a seedling",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "World obstruction blocks interaction focus",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "E cannot collect through a world obstacle",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Removing the obstruction restores focus",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "E collects one seedling and inventory",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Duplicate pickup cannot reward twice",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Guidance switches to an available planting bed",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "E plants a tree and consumes inventory",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Duplicate planting cannot consume another seedling",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Planted tree grows to its authored size",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Planting goals unlock Stop the Fire",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "HUD counters use committed progress",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Route around planted trees remains traversable",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Camera crosshair selects the distant fire",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Water range prevents distant suppression",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Near fire is aimable through Cinemachine",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Camera-ray obstruction blocks suppression",
+            "Passed": true,
+            "Detail": "Aim none / contact 0"
+        },
+        {
+            "Name": "Nozzle-only obstruction fixture leaves the crosshair clear",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Nozzle linecast independently blocks water",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Left mouse sprays particles and accumulates contact",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Releasing water does not erase contact",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Pause preserves fire contact and mission time",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Mouse click resumes gameplay",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Water contact completes fire-01",
+            "Passed": true,
+            "Detail": "Contact 1.000"
+        },
+        {
+            "Name": "Fire completion is one-shot",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Completed fire stops flames, smoke and collision",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "100 percent requires returning to the post",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "HUD and guidance reflect full restoration",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Physical post trigger wins exactly once",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Victory screen releases controls and cursor",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Action events match profile goals",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "All four missions execute in order",
+            "Passed": true,
+            "Detail": "FirstSteps -> SeedsOfHope -> StopTheFire -> ANewBeginning -> Complete"
+        },
+        {
+            "Name": "Replay reloads a clean briefing",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Replay restores visual objects and the profile",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Replay can begin First Steps again",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Pause-menu return resets the session",
+            "Passed": true,
+            "Detail": ""
+        },
+        {
+            "Name": "Runtime produced no error or exception logs",
+            "Passed": true,
+            "Detail": ""
+        }
+    ],
+    "Captures": [
+        "01-menu.png",
+        "02-briefing.png",
+        "03-pause.png",
+        "04-seedling.png",
+        "05-new-roots.png",
+        "06-fire-suppression.png",
+        "07-restored-forest.png",
+        "08-victory.png"
+    ],
+    "Errors": []
+}

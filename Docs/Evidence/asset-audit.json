@@ -1,0 +1,34 @@
+{
+  "AssetFiles": 353,
+  "MetadataFiles": 442,
+  "MissingMetadata": [],
+  "MissingDirectoryMetadata": [],
+  "InvalidMetadata": [],
+  "DuplicateGUIDs": [],
+  "LargestAssets": [
+    {
+      "Path": "Assets/Starter Assets/Runtime/ThirdPersonController/Character/Textures/Armature_Arms_Normal.tif",
+      "Bytes": 19552838
+    },
+    {
+      "Path": "Assets/Starter Assets/Runtime/ThirdPersonController/Character/Textures/Armature_Body_Normal.tif",
+      "Bytes": 18432742
+    },
+    {
+      "Path": "Assets/Starter Assets/Runtime/ThirdPersonController/Character/Textures/Armature_Legs_Normal.tif",
+      "Bytes": 17252902
+    },
+    {
+      "Path": "Assets/Starter Assets/Runtime/ThirdPersonController/Character/Textures/Armature_Body_AlbedoTransparency.tif",
+      "Bytes": 5334786
+    },
+    {
+      "Path": "Assets/Starter Assets/Runtime/ThirdPersonController/Character/Models/Armature.fbx",
+      "Bytes": 5021936
+    },
+    {
+      "Path": "Assets/Starter Assets/Runtime/ThirdPersonController/Character/Textures/Armature_Arms_AlbedoTransparency.tif",
+      "Bytes": 4904798
+    }
+  ]
+}

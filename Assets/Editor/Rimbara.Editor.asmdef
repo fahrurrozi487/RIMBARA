@@ -1,0 +1,7 @@
+{
+  "name": "Rimbara.Editor",
+  "rootNamespace": "Rimbara.Editor",
+  "references": ["Rimbara", "Unity.Cinemachine", "Unity.InputSystem", "Unity.StarterAssets", "Unity.TextMeshPro", "UnityEngine.UI", "Unity.RenderPipelines.Universal.Runtime", "Unity.RenderPipelines.Core.Runtime"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

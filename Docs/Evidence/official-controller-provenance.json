@@ -1,0 +1,17 @@
+{
+  "Product": 196526,
+  "Version": "2.0.2",
+  "PackageBytes": 80315533,
+  "Files": [
+    {
+      "Path": "Assets/Starter Assets/Runtime/ThirdPersonController/Scripts/ThirdPersonController.cs",
+      "MatchesOfficialPackage": true,
+      "SHA256": "01ee7e781b5b61e0b10395c1d20fa59f571eda8b8c9e4b622f474782a1515833"
+    },
+    {
+      "Path": "Assets/Starter Assets/Runtime/InputSystem/StarterAssetsInputs.cs",
+      "MatchesOfficialPackage": true,
+      "SHA256": "5607ca5a63e62afaf677e01aecde4a10cb76229dd46fd5c15dda79ac07fdffc2"
+    }
+  ]
+}

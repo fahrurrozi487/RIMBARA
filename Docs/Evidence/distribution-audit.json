@@ -1,0 +1,19 @@
+{
+  "Passed": true,
+  "Checks": {
+    "Executable": true,
+    "Data": true,
+    "UnityPlayer": true,
+    "ThirdPartyNotices": true,
+    "UnityCompanion": true,
+    "KenneyCC0": true,
+    "LiberationSansOFL": true
+  },
+  "SHA256": {
+    "Assets/Scenes/Main.unity": "e08027b5bccc2d06d2047e1920fa662a2bcbf8aacbf6b40db80feeeaeefaf11f",
+    "Assets/Scripts/Diagnostics/RuntimeSmokeDriver.cs": "f0fa6ced36a4446206cd998ec3817f44b7336f19d3d7acaaf61b32f516e26b03",
+    "Assets/Editor/HudFactory.cs": "7b0997d54a3c98a6312eb9ecda561e985ef5514ed80000b53cb597cd36c75b3c",
+    "Builds/Windows/RIMBARA.exe": "835d92352fdb672e6c667fe5398ebb2f91db9f9bdf8975dab5e6a2b85c16cead",
+    "Builds/Windows/RIMBARA_Data/Managed/Rimbara.dll": "50b522c9c3fb2f619c657b68cc3488efef06d1035adc38472efb9e9a880441f6"
+  }
+}
